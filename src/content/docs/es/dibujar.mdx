@@ -22,6 +22,10 @@ import img15 from './modos.png';
 import img16 from './center.png';
 import img17 from './corners.png';
 
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 En este apartado conoceremos las figuras primitivas e iremos agregándolas a un ejemplo en el construiremos paso a paso un dibujo. Finalizado este apartado y el siguiente de color, podremos comprender como se genera el siguiente sketch:
 
 <div>
@@ -29,6 +33,10 @@ En este apartado conoceremos las figuras primitivas e iremos agregándolas a un 
 </div>
 
 ### 1.3.1. Coordenadas 
+
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=120" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 Ya vimos como crear nuestro lienzo y ponerle un color de fondo. Ahora hay que saber cómo interpretarlo, por que va a ser necesario explicarle a p5.js donde queremos las cosas que dibujemos.
 
@@ -42,9 +50,13 @@ Además, si trabajamos en tres dimensiones tendremos un nuevo eje de coordenadas
 
 ### 1.3.2 Pixels
 
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=201" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 Como dijimos anteriormente, una pantalla de una pc es una grilla de pequeños elementos que brillan, que denominamos pixeles.
 
-Las pantallas pueden encontrarse en muchas resoluciones: 800X600, 1024X768, 1280X1024, etc, etc.
+Las pantallas pueden encontrarse en muchas resoluciones: 800x600, 1024x768, 1280x1024, etc.
 
 Estos tamaños definen la cantidad de pixeles que tiene una pantalla, y que justamente nos va a dar a nosotros una idea de la cantidad de puntos que podemos colorear.
 
@@ -53,6 +65,10 @@ Las imágenes en una pc son dibujadas pixel por pixel . Mientras más cantidad d
 Las resoluciones también se pueden medir por cantidad de pixeles por pulgada, lo que da una idea de con qué resolución podemos crear una imagen.
 
 ### 1.3.3 Posición
+
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=256" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 Una posición de la pantalla está comprendida por el eje de coordenadas X y el eje de coordenadas Y. El eje de coordenadas X es la distancia horizontal desde el origen y el eje de coordenadas Y es la distancia vertical.
 
@@ -63,6 +79,10 @@ Como dijimos anteriormente, en p5.js, el origen es la esquina superior izquierda
 Una posición se escribe con el valor del eje X seguido del valor del eje Y, separados por una coma. La notación para el origen es (0,0), la coordenada (50,50) tiene 50px de coordenada X y 50px de coordenada Y, y la coordenada (20,60) tiene 20px de coordenada X y 60px de coordenada Y. Si el tamaño de nuestro lienzo es de 100 píxeles de ancho y 100 píxeles de alto, el píxel de la esquina superior izquierda es (0,0), el píxel de la esquina superior derecha es (99,0), el píxel de la esquina inferior izquierda es (0,99), y el píxel de la esquina inferior derecha es (99,99) . Esto se verá más claro en el punto siguiente cuando usemos la función point().
 
 ### 1.3.4 Figuras primitivas
+
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=403" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 En p5.js podemos contar con muchas funciones que se denominan primitivas.
 
@@ -77,6 +97,10 @@ En p5.js estos problemas están en su mayoría resueltos, y en la mayoría de lo
 Con pocas líneas de código se pueden hacer muchas cosas que con otros lenguajes sería muy difícil de realizar.
 
 ### 1.3.5 Point
+
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=459" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 En primera instancia podemos dibujar un punto, que es el elemento visual más simple de encontrar.
 
@@ -96,11 +120,15 @@ Un punto es del tamaño de un sólo píxel, mas adelante veremos como cambiar el
 <iframe src="https://editor.p5js.org/sebifly/sketches/RZvDsiPCD" width="500" height="600"></iframe>
 </div>
 
-#Para tener en cuenta: Hay puntos dibujandose por fuera de nuestro lienzo. Por más que no los veamos estos puntos se están dibujando, solo que no se muestran.
+> Para tener en cuenta: Hay puntos dibujandose por fuera de nuestro lienzo. Por más que no los veamos estos puntos se están dibujando, solo que no se muestran.
 
 ### 1.3.6 Line
 
-Una línea no es más que una serie de puntos. Es posible dibujar cualquier línea mediante puntos, pero p5.js tiene una función que simplifica esto: la función line(). Esta función tiene cuatro parámetros, dos por cada extremo:
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=634" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Una línea no es más que una serie de puntos. Es posible dibujar cualquier línea mediante puntos, pero p5.js tiene una función que simplifica esto: la función `line()`. Esta función tiene cuatro parámetros, dos por cada extremo:
 
 ```js
 line(x1, y1, x2, y2);
@@ -114,11 +142,15 @@ Los primeros dos parámetros establecen el punto donde la línea empieza y los d
 <iframe src="https://editor.p5js.org/sebifly/sketches/K4YaePkGm" width="500" height="600"></iframe>
 </div>
 
-#Para Jugar: probá comentar las líneas de a una para reconocer cuál desaparece y saber cuál es cada una.
+> Para Jugar: probá comentar las líneas de a una para reconocer cuál desaparece y saber cuál es cada una.
 
 ### 1.3.7 Rect
 
-Los rectángulos se dibujan de una manera un poco diferente a las líneas. En lugar de definir cada punto, los cuatro parámetros establecen la posición y las dimensiones de la figura. La función rect() dibuja un rectángulo: 
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=834" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Los rectángulos se dibujan de una manera un poco diferente a las líneas. En lugar de definir cada punto, los cuatro parámetros establecen la posición y las dimensiones de la figura. La función `rect()` dibuja un rectángulo: 
 
 ```js
 rect(x, y, ancho, alto);
@@ -132,7 +164,7 @@ Los dos primeros parámetros establecen la localización del punto superior izqu
 <iframe src="https://editor.p5js.org/sebifly/sketches/YnCNPPQ5Z" width="500" height="600"></iframe>
 </div>
 
-#Para Tener en cuenta: rectángulos con mismo valor de ancho y alto forman cuadrados. Con mayor valor de alto forman un rectángulo vertical. Con mayor valor de ancho forman rectángulo horizontal
+> Para Tener en cuenta: rectángulos con mismo valor de ancho y alto forman cuadrados. Con mayor valor de alto forman un rectángulo vertical. Con mayor valor de ancho forman rectángulo horizontal
 
 También se pueden generar rectángulos con bordes redondeados agregando nuevos parámetros a la función de la siguiente forma:
 
@@ -141,9 +173,13 @@ rect(x, y, ancho, alto, radio)
 rect(x, y, ancho, alto, si, sa, id, ii)
 ```
 
-El parámetro radio corresponde al radio de redondeo. La versión con otros cuatro parámetros permite agregar un radio distinto de redondeo a cada esquina. Siendo si (Superior Izquierdo), sa (Superior Derecho), id (Inferior Derecho) y ii (Inferior Izquierdo).
+El parámetro radio corresponde al radio de redondeo. La versión con otros cuatro parámetros permite agregar un radio distinto de redondeo a cada esquina. Siendo `si` (superior izquierdo), `sa` (superior derecho), `id` (inferior derecho) e `ii` (inferior izquierdo).
  
 ### 1.3.8 Ellipse
+
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=1164" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 Las elipses también se dibujan de forma diferente. los cuatro parámetros establecen la posición del centro de la figura y las dimensiones de ancho y alto. La función ellipse() dibuja una elipse en el lienzo:
 
@@ -163,26 +199,34 @@ Reemplacemos los puntos por círculos en nuestro ejemplo:
 <iframe src="https://editor.p5js.org/sebifly/sketches/QJKjihYqP" width="500" height="600"></iframe>
 </div>
 
-#Para Tener en cuenta: Como dijimos con los puntos podemos dibujar figuras por fuera de nuestro lienzo y solo se mostrará la parte que ingrese en la ventana que hayamos creado. Este ejemplo se ve claramente con los puntos.
+> Para Tener en cuenta: Como dijimos con los puntos podemos dibujar figuras por fuera de nuestro lienzo y solo se mostrará la parte que ingrese en la ventana que hayamos creado. Este ejemplo se ve claramente con los puntos.
  
 ### 1.3.9 Triangle
 
-La función triangle() dibuja un triángulo. Tiene seis parámetros, dos por cada punto, que representan cada uno de los vértices del triángulo:
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=1290" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+La función `triangle()` dibuja un triángulo. Tiene seis parámetros, dos por cada punto, que representan cada uno de los vértices del triángulo:
 
 <Image src={img7} alt="" width="600" />
 
-El primer par define el primer punto, el segundo par el segundo punto y el último par el tercer punto. Cualquier triángulo puede ser dibujado conectando tres líneas, pero la función triangle() hace posible dibujar una figura con relleno. Triángulos de todas formas y tamaños pueden ser creados cambiando los valores de los parámetros. 
+El primer par define el primer punto, el segundo par el segundo punto y el último par el tercer punto. Cualquier triángulo puede ser dibujado conectando tres líneas, pero la función `triangle()` hace posible dibujar una figura con relleno. Triángulos de todas formas y tamaños pueden ser creados cambiando los valores de los parámetros. 
 
 <div>
 <iframe src="https://editor.p5js.org/sebifly/sketches/nZK6efGvs" width="500" height="600"></iframe>
 </div>
 
-#Para Jugar: probá comentar todo el resto del código con los caracteres de apertura /* y de cierre */ para reconocer solo los triángulos.
+> Para Jugar: probá comentar todo el resto del código con los caracteres de apertura `/*` y de cierre `*/` para reconocer solo los triángulos.
 
  
 ### 1.3.10 Quad
 
-La función quad() dibuja un cuadrilátero, osea,  un polígono de cuatro lados. Funciona de manera similar a los triángulos, ya que debemos establecer la ubicación de cada uno de los cuatro vértices. Por lo tanto, tiene ocho parámetros dos por cada punto:
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=1335" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+La función `quad()` dibuja un cuadrilátero, osea,  un polígono de cuatro lados. Funciona de manera similar a los triángulos, ya que debemos establecer la ubicación de cada uno de los cuatro vértices. Por lo tanto, tiene ocho parámetros dos por cada punto:
 
 <Image src={img8} alt="" width="600" />
 
@@ -194,7 +238,11 @@ Variando los valores de los parámetros se puede construir rectángulos, cuadrad
 
 ### 1.3.11 Bezier
 
-La función bezier() puede dibujar líneas que no son rectas. Una curva Bézier está definida por una serie de puntos de control y puntos de anclaje. Una curva es dibujada entre dos puntos de anclaje, y los puntos de control definen su forma:
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=1418" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+La función `bezier()` puede dibujar líneas que no son rectas. Una curva Bézier está definida por una serie de puntos de control y puntos de anclaje. Una curva es dibujada entre dos puntos de anclaje, y los puntos de control definen su forma:
 
 <Image src={img9} alt="" width="600" />
 
@@ -207,6 +255,10 @@ En los programas que se utilizan curvas Bézier, tales como Adobe Illustrator o 
 </div>
 
 ### 1.3.12 Orden de dibujo
+
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=1505" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 El orden en que dibujamos las figuras en el código, define qué figuras aparecerán sobre otras en la ventana de representación. Como dijimos anteriormente, el editor lee las instrucciones una a una de arriba abajo, por lo tanto, si dibujamos un rectángulo en la primera línea de un programa y una elipse en la segunda línea, el rectángulo aparecerá debajo de la elipse cuando ejecutemos el programa, ya que primero se dibujara el rectángulo y luego la elipse. Revirtiendo el orden, el rectángulo se coloca arriba.
 
@@ -230,11 +282,15 @@ rect(15, 15, 50, 50); //Arriba
 
 ### 1.3.13 Contornos de Figuras
 
-Las figuras tienen una línea que configura su contorno. Los atributos de esta línea, están controlados por las funciones strokeWeight(), strokeCap() y strokeJoin(). 
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=1702" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Las figuras tienen una línea que configura su contorno. Los atributos de esta línea, están controlados por las funciones `strokeWeight()`, `strokeCap()` y `strokeJoin()`. 
 
 Cuando se escriba alguna de estas funciones afectarán a todas las figuras que se encuentren en las líneas posteriores de nuestro código, hasta que indiquemos otra cosa volviendo a asignarle un valor.
 
-La función strokeWeight() tiene un parámetro numérico que define el grosor en pixeles del contorno de las figuras. Cuando afecta a la función line() indicará el grosor de nuestra línea y con la función point() el tamaño de nuestro punto.
+La función `strokeWeight()` tiene un parámetro numérico que define el grosor en pixeles del contorno de las figuras. Cuando afecta a la función `line()` indicará el grosor de nuestra línea y con la función `point()` el tamaño de nuestro punto.
 
 <Image src={img12} alt="" width="600" />
 
@@ -242,45 +298,47 @@ La función strokeWeight() tiene un parámetro numérico que define el grosor en
 <iframe src="https://editor.p5js.org/sebifly/sketches/zAJmOfb00" width="500" height="600"></iframe>
 </div>
 
-La función strokeCap() determina los puntos finales de las líneas. Recibe un solo parámetro que puede ser ROUND, SQUARE o PROJECT. 
+La función `strokeCap()` determina los puntos finales de las líneas. Recibe un solo parámetro que puede ser `ROUND`, `SQUARE` o `PROJECT`. 
 
-ROUND redondea los puntos finales,  SQUARE los vuelve cuadrados y PROJECT las extiende. Esta función se usa en líneas.
+`ROUND` redondea los puntos finales,  `SQUARE` los vuelve cuadrados y `PROJECT` las extiende. Esta función se usa en líneas.
 
-Si no se escribe la función, se utiliza por defecto el valor ROUND.
+Si no se escribe la función, se utiliza por defecto el valor `ROUND`.
 
 <Image src={img13} alt="" width="600" />
 
-La función strokeJoin() determina la forma en la que se unen los vértices de las figuras. Recibe un solo parámetro que puede ser BEVEL, MITTER o ROUND. 
+La función `strokeJoin()` determina la forma en la que se unen los vértices de las figuras. Recibe un solo parámetro que puede ser `BEVEL`, `MITTER` o `ROUND`. 
 
-BEVEL corta en diagonal las esquinas cuadradas, MITTER cuadra las esquinas (es el valor por defecto) y ROUND redondea las esquinas.
+`BEVEL` corta en diagonal las esquinas cuadradas, `MITTER` cuadra las esquinas (es el valor por defecto) y `ROUND` redondea las esquinas.
 
-Si no se escribe la función, se utiliza por defecto el valor MITTER.
+Si no se escribe la función, se utiliza por defecto el valor `MITTER`.
 
 <Image src={img14} alt="" width="600" />
 
 ### 1.3.14 Modos de dibujo
 
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=2020" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 Cuando dibujamos elipses o rectángulos, los ubicamos como explicamos anteriormente, indicando el punto de arriba a la izquierda para los rectángulos e indicando el punto del centro para las elipses.
 
-Esto se puede cambiar con las funciones ellipseMode() y rectMode().
+Esto se puede cambiar con las funciones `ellipseMode()` y `rectMode()`.
 
 Cuando se escriba alguna de estas funciones afectarán a todas las figuras que se encuentren en las líneas posteriores de nuestro código, hasta que indiquemos otra cosa volviendo a asignarle un valor.
 
-ellipseMode recibe los parametros CENTER, RADIUS, CORNER y CORNERS, para definir desde donde se toma la coordenada de posición.
+ellipseMode recibe los parametros `CENTER`, `RADIUS`, `CORNER` y `CORNERS`, para definir desde donde se toma la coordenada de posición.
 
-El modo por defecto es CENTER, cuyos parámetros se explicaron en el apartado de la función ellipse().
+El modo por defecto es `CENTER`, cuyos parámetros se explicaron en el apartado de la función ellipse().
 
-El modo RADIUS también utiliza los dos primeros parámetros para posicionar el centro, pero utiliza el tercer parámetro para definir la mitad del ancho y el cuarto parámetro para definir la mitad de la altura. De esta manera con RADIUS, los parámetros de ancho y alto definen el radio de la elipse, no el diámetro.
+El modo `RADIUS` también utiliza los dos primeros parámetros para posicionar el centro, pero utiliza el tercer parámetro para definir la mitad del ancho y el cuarto parámetro para definir la mitad de la altura. De esta manera con `RADIUS`, los parámetros de ancho y alto definen el radio de la elipse, no el diámetro.
 
-Con CORNER, se define la posición de la elipse desde la esquina superior izquierda. Con CORNERS se define la posición con los dos primeros parámetros desde la posición superior izquierda y la extensión de la  elipse hasta las coordenadas indicadas en el parámetro 3 y 4.
+Con `CORNER`, se define la posición de la elipse desde la esquina superior izquierda. Con `CORNERS` se define la posición con los dos primeros parámetros desde la posición superior izquierda y la extensión de la  elipse hasta las coordenadas indicadas en el parámetro 3 y 4.
 
 <Image src={img15} alt="" width="600" />
 
-Con un estilo similar, la función rectMode() afecta a cómo se dibujan los rectángulos. Requiere un
+Con un estilo similar, la función `rectMode()` afecta a cómo se dibujan los rectángulos. Requiere un parámetro que puede ser `CORNER`, `CORNERS` o `CENTER`. El modo por defecto es `CORNER` que funciona como fue explicado en el apartado de la función `rect()`.
 
-parámetro que puede ser CORNER, CORNERS o CENTER. El modo por defecto es CORNER que funciona como fue explicado en el apartado de la función rect().
-
-CORNERS causa que el tercer y cuarto parámetro de rect() se definan en la esquina contraria a la primera. El modo CENTER causa que el primer y segundo parámetro de rect() definan el centro del rectángulo y usa el tercer y cuarto parámetro para el ancho y el alto. 
+`CORNERS` causa que el tercer y cuarto parámetro de `rect()` se definan en la esquina contraria a la primera. El modo `CENTER` causa que el primer y segundo parámetro de `rect()` definan el centro del rectángulo y usa el tercer y cuarto parámetro para el ancho y el alto. 
 
 <Image src={img16} alt="" width="600" />
 

@@ -8,19 +8,11 @@ import img from './sintaxis.png';
 
 ### 1.2.1. Sintaxis General
 
-<div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1PFSn4DUYFg?si=_NbmPlLiw4eCoTfM&amp;start=1664" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 El hecho de crear un programa implica recurrir a la escritura y aprender un lenguaje. Similar a cuando aprendemos un nuevo lenguaje oral o escrito, necesitamos aprender una sintaxis y una lógica. Escribir en un lenguaje humano es muy complicado. Posee ambigüedad en las palabras, y mucha flexibilidad para la construcción de párrafos. En ese sentido, el lenguaje de máquina es más sencillo, pero posee una dificultad clara: la lógica de la programación. Usualmente, un ser humano puede percatarse de un error de sintaxis y darlo por alto, restándole parcial o completa importancia. Sin embargo, en un lenguaje de máquina las cosas son de una forma o de otra: O está bien, o está mal.
 
-Por esto hay que tener principal atención en la sintaxis correcta a utilizar. Ejemplos de esto son las mayúsculas, para p5.js no es lo mismo una `C` que una `c`, por lo tanto no será lo mismo escribir `createcanvas` que escribir `createCanvas`. 
+Por esto hay que tener principal atención en la sintaxis correcta a utilizar. Ejemplos de esto son las mayúsculas, para p5.js no es lo mismo una C que una c, por lo tanto no será lo mismo escribir createcanvas que escribir createCanvas. 
 
 ### 1.2.2. Instrucciones
-
-<div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1PFSn4DUYFg?si=_NbmPlLiw4eCoTfM&amp;start=1776" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 Si utilizamos una metáfora del lenguaje humano, podemos entender a la instrucción como si fuera una oración en la que le pedimos a nuestro programa que haga algo.
 
@@ -39,41 +31,29 @@ Iremos viendo estas instrucciones a lo largo del desarrollo del curso. Por ahora
 
 ### 1.2.3. Funciones
 
-<div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1PFSn4DUYFg?si=_NbmPlLiw4eCoTfM&amp;start=1875" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 Las funciones permiten dibujar formas, colores, realizar cálculos matemáticos, entre otras variadas acciones.
 
-Por lo general se comienzan en minúsculas y seguidas por paréntesis. Algunas funciones aceptan parámetros, los cuales se escriben entre los paréntesis. Si acepta más de uno, son separados por una coma (,). Por ejemplo: `createCanvas(500, 600);`
+Por lo general se comienzan en minúsculas y seguidas por paréntesis. Algunas funciones aceptan parámetros, los cuales se escriben entre los paréntesis. Si acepta más de uno, son separados por una coma (,). Por ejemplo: createCanvas(500, 600);
 
 
 ### 1.2.4. Bloques de programación
 
-<div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1PFSn4DUYFg?si=_NbmPlLiw4eCoTfM&amp;start=2023" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-Las funciones para ser ejecutadas en nuestro programa deben estar incluidas dentro de un bloque de programación. Como vimos en los ejemplos del editor de p5.js y los locales, ambos vienen con dos bloques predefinidos `setup()` y `draw()`. Es condición fundamental para que nuestro programa funcione que tenga uno de estos dos bloques y es condición fundamental para que nuestras funciones se ejecuten que estén dentro de la llave de apertura y cierre de alguno de estos bloques.
+Las funciones para ser ejecutadas en nuestro programa deben estar incluidas dentro de un bloque de programación. Como vimos en los ejemplos del editor de p5.js y los locales, ambos vienen con dos bloques predefinidos setup() y draw(). Es condición fundamental para que nuestro programa funcione que tenga uno de estos dos bloques y es condición fundamental para que nuestras funciones se ejecuten que estén dentro de la llave de apertura y cierre de alguno de estos bloques.
 
 Veremos las características específicas de cada uno de estos en las clases posteriores. Por ahora nos limitaremos a escribir todas nuestras funciones dentro del bloque setup();
 
 
 ### 1.2.5. Tamaño y fondo 
 
-<div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1PFSn4DUYFg?si=_NbmPlLiw4eCoTfM&amp;start=2091" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 Dibujar en una pantalla de computadora es como trabajar en papel cuadriculado. Una pantalla de computadora es una matriz de elementos de luz llamados pixeles. 
 
 Para comenzar nuestro programa primero debemos establecer algunas características del entorno donde se va a desarrollar, como lo son el tamaño de la pantalla (es decir, la cantidad de pixeles de nuestra pantalla que vamos a utilizar) y por otro lado el color de  fondo que tendrá nuestra pantalla. 
 
-Para esto utilizamos dos funciones básicas: `createCanvas()` y `background()`.
+Para esto utilizamos dos funciones básicas: createCanvas y background.
 
-`createCanvas()`, nos permite definir las dimensiones de la ventana donde se muestran los  eventos, vendría a ser nuestro lienzo donde vamos a plasmar las figuras, como dijimos anteriormente las funciones pueden recibir parámetros que pondremos entre paréntesis separados por coma, en el caso de `createCanvas()` recibe dos parámetros numéricos, el primero corresponde a la cantidad de pixeles de ancho va ocupar el lienzo en nuestra pantalla y el segundo a la cantidad de pixeles de alto. `createCanvas(ancho, alto);` 
+createCanvas, nos permite definir las dimensiones de la ventana donde se muestran los  eventos, vendría a ser nuestro lienzo donde vamos a plasmar las figuras, como dijimos anteriormente las funciones pueden recibir parámetros que pondremos entre paréntesis separados por coma, en el caso de createCanvas recibe dos parámetros numéricos, el primero corresponde a la cantidad de pixeles de ancho va ocupar el lienzo en nuestra pantalla y el segundo a la cantidad de pixeles de alto. createCanvas(ancho, alto); 
 
-Si no utilizamos la función `createCanvas()` el tamaño de lienzo por defecto va a ser de 100x100 pixeles.
+Si no utilizamos la función createCanvas() el tamaño de lienzo por defecto va a ser de 100x100 pixeles.
 
 <div>
 <iframe src="https://editor.p5js.org/sebifly/sketches/VwR7Wuejn" width="100%" height="500px"></iframe>
@@ -93,13 +73,9 @@ Más adelante veremos cómo trabajar con más colores, pasando más parámetros 
 <iframe src="https://editor.p5js.org/sebifly/sketches/d814mBEfd" width="100%" height="500px"></iframe>
 </div>
 
-> Para jugar: probá cambiandole los números dentro de la función createCanvas y de la función background. 
+#Para jugar: probá cambiandole los números dentro de la función createCanvas y de la función background. 
 
 ### 1.2.6. Comentarios y Consola
-
-<div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1PFSn4DUYFg?si=_NbmPlLiw4eCoTfM&amp;start=2733" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 El ejemplo anterior es bastante simple y corto, por lo que su interpretación no requiere demasiado esfuerzo. Pero a medida que nuestros programas empiecen a crecer, va a ser mas difícil interpretarlos de forma rápida, o recordar después de un tiempo lo que hace una parte específica del código o mismo que alguien más pueda entender nuestro código si lo compartimos.
 
@@ -130,7 +106,7 @@ Pero además de esto, tenemos la posibilidad de escribir nuestros propios mensaj
 
 Esto es util ya que cuando un programa es ejecutado, la computadora realiza acciones a tal velocidad que es imposible percibirlas para el ojo humano. Por lo tanto, es importante mirar la consola, no solo para errores, sino también para entender qué ocurre detrás del programa.
 
-Para utilizar la consola tenemos la función `console.log()`; a la que le podemos pasar cualquier texto que queramos como parámetro encerrado entre comillas y este será mostrado en la consola.
+Para utilizar la consola tenemos la función console.log(); a la que le podemos pasar cualquier texto que queramos como parámetro encerrado entre comillas y este será mostrado en la consola.
 
 De esta forma podemos utilizar la consola no solo para mostrar texto sino también, cuando avancemos y nuestros programas sean mas complejos, para mostrar el contenido de una variable, confirmar un evento o chequear datos externos que están ingresando. 
 
@@ -140,17 +116,13 @@ Por ahora nos limitamos a imprimir texto y a tener en cuenta que tanto imprimir 
 <iframe src="https://editor.p5js.org/sebifly/sketches/YDlpbUAs0" width="100%" height="500px"></iframe>
 </div>
 
-> Para jugar: Intenta cambiar el texto de los comentarios. Intenta marcar como comentario alguna función. Imprimí otros mensajes en la consola
+#Para jugar: Intenta cambiar el texto de los comentarios. Intenta marcar como comentario alguna función. Imprimí otros mensajes en la consola
 
 ### 1.2.7. Ejemplos y Referencia 
 
-<div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1PFSn4DUYFg?si=_NbmPlLiw4eCoTfM&amp;start=3197" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 Aprender a programar con p5.js involucra explorar mucho código: ejecutarlo, alterarlo, romperlo y mejorarlo hasta que lo hayas reconfigurado y hecho algo novedoso. 
 
-Con esto en mente, el sitio web de p5.js tiene docenas de ejemplos que demuestran diferentes características. Visita la página de Ejemplos para verlos. https://p5js.org/es/examples/. 
+Con esto en mente, el sitio web de p5.js tiene docenas de ejemplos que demuestran diferentes características. Visita la página de Ejemplos para verlos. https://p5js.org/es/examples/ . 
 
 Podés jugar con ellos editando el código en la página y luego haciendo click en "Ejecutar". Los ejemplos están agrupados en distintas categorías según su función, como forma, color, e imagen. Encuentra un tema que te interese en la lista y prueba un ejemplo. 
 
@@ -160,7 +132,7 @@ Si ves una parte del programa con la que no estás familiarizado o sobre la que 
 
 La Referencia de p5.js explica cada elemento de código con una descripción y ejemplos para saber con seguridad cual es la correcta sintaxis de cada una de las funciones, la cantidad de parámetros que recibe y la funcionalidad de cada parámetro.
 
-Por ejemplo, no recordamos cual de los parámetros de la función `createCanvas()` es el alto y cual es el ancho de la pantalla.
+Por ejemplo, no recordamos cual de los parámetros de la función createCanvas() es el alto y cual es el ancho de la pantalla.
 
 Para esto visitamos la referencia, buscamos la función y encontraremos toda la información necesaria de la función deseada.
 
