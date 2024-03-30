@@ -11,17 +11,25 @@ import img4 from './hsb.png';
 
 ### 1.4.1. Valores de grises
 
-Los ejemplos vistos anteriormente han usado el fondo por defecto de color gris claro, líneas negras, y figuras blancas. Para cambiar estos valores, es necesario introducir sintaxis adicional. Como ya vimos, la función background() establece el color de la ventana de representación con un número entre 0 y 255. Este rango puede ser incómodo si no estás familiarizado con programas de dibujo en la computadora. Los valores de los parámetros varían entre 0 y 255, donde 255 es blanco, 128 es gris medio y 0 es negro, con todo el rango de valores de grises intermedio. 
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=2153" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Los ejemplos vistos anteriormente han usado el fondo por defecto de color gris claro, líneas negras, y figuras blancas. Para cambiar estos valores, es necesario introducir sintaxis adicional. Como ya vimos, la función `background()` establece el color de la ventana de representación con un número entre 0 y 255. Este rango puede ser incómodo si no estás familiarizado con programas de dibujo en la computadora. Los valores de los parámetros varían entre 0 y 255, donde 255 es blanco, 128 es gris medio y 0 es negro, con todo el rango de valores de grises intermedio. 
 
 <Image src={img1} alt="" width="600" />
 
 ### 1.4.2. Fill y Stroke
 
-Al agregar las funciones fill() y stroke()  antes de dibujar podemos definir el color de cualquier forma deseada.
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=2216" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
-La función fill() define el valor del relleno de las figuras, y la función stroke() define el valor del contorno de las figuras dibujadas. Si no se define un valor de relleno, se usa el valor por defecto 255 (blanco). Si no se define un valor de contorno, se usa el valor por defecto 0 (negro).
+Al agregar las funciones `fill()` y `stroke()`  antes de dibujar podemos definir el color de cualquier forma deseada.
 
-Cuando se ha definido un valor de relleno o contorno, se aplica a todas las figuras dibujadas después. Para cambiar el valor de relleno o contorno, usamos la función fill() o stroke() de nuevo.
+La función `fill()` define el valor del relleno de las figuras, y la función `stroke()` define el valor del contorno de las figuras dibujadas. Si no se define un valor de relleno, se usa el valor por defecto 255 (blanco). Si no se define un valor de contorno, se usa el valor por defecto 0 (negro).
+
+Cuando se ha definido un valor de relleno o contorno, se aplica a todas las figuras dibujadas después. Para cambiar el valor de relleno o contorno, usamos la función `fill()` o `stroke()` de nuevo.
 
 ```js
 background(255);    // Define el color del lienzo como blanco
@@ -29,19 +37,23 @@ stroke(0);          // Define el contorno de la forma (stroke) como negro
 fill(150);          // Define el interior de la forma (fill) como gris
 ```
 
-Tanto el contorno como el interior de la forma pueden ser eliminados con las funciones: noStroke() y noFill(). Instintivamente podríamos pensar en utilizar "stroke(0)" para eliminar el contorno, sin embargo, es importante recordar que 0 no significa "nada", sino que indica un color negro. Además, tené en cuenta de no eliminar ambos, con noStroke() y noFill(), porque no se verá ninguna figura.
+Tanto el contorno como el interior de la forma pueden ser eliminados con las funciones: `noStroke()` y `noFill()`. Instintivamente podríamos pensar en utilizar `stroke(0)` para eliminar el contorno, sin embargo, es importante recordar que 0 no significa "nada", sino que indica un color negro. Además, tené en cuenta de no eliminar ambos, con `noStroke()` y `noFill()`, porque no se verá ninguna figura.
 
 Adicionalmente si dibujamos dos figuras, p5.js siempre utilizará la última especificación de contorno y llenado, leyendo el código de arriba a abajo.
 
 <Image src={img2} alt="" width="600" />
 
-Un parámetro opcional adicional para fill() o stroke() regula la transparencia. Definiendo el parámetro a 255 hace que la figura sea totalmente opaca, y a 0 totalmente transparente:
+Un parámetro opcional adicional para `fill()` o `stroke()` regula la transparencia. Definiendo el parámetro a 255 hace que la figura sea totalmente opaca, y a 0 totalmente transparente:
 
 <div>
 <iframe src="https://editor.p5js.org/sebifly/sketches/zD5KoHX8e" width="500" height="600"></iframe>
 </div>
 
 ### 1.4.3. Color por Números
+
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=2703" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 Cuando utilizamos algún pigmento como témperas, acrílicos, oleos, etc. si mezclamos los colores "primarios" se puede generar cualquier otro color. Mezclar todos los colores resulta en un color marrón oscuro, y mientras más pintura se añade más oscuro es el resultado.
 
@@ -67,7 +79,11 @@ Así como en la escala de grises, los elementos de color son expresados en rango
 
 ### 1.4.4. Ajuste de color
 
-Ya hemos visto como en p5.js, los colores están definidos por los parámetros de las funciones background(), fill() y stroke() cambiando el valor de los parámetros para controlar la escala de grises.
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=2871" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Ya hemos visto como en p5.js, los colores están definidos por los parámetros de las funciones `background()`, `fill()` y `stroke()` cambiando el valor de los parámetros para controlar la escala de grises.
 
 Ahora bien, si queremos comenzar a trabajar con todo el espectro de colores, lo que debemos hacer es utilizar tres parámetros en estas funciones:
 
@@ -94,7 +110,11 @@ De esta forma, con la combinación de cada uno de los componentes rojo, verde y 
  
 ### 1.4.5. Modo de color RGB, HSB
 
-El modo RGB con rangos de 0 a 255 no es la única forma en que podemos manipular color en p5.js, de hecho p5.js nos permite pensar el color de la manera que deseemos. Por ejemplo, podés preferir pensar el color en rangos de 0 a 100 (como un porcentaje). Esto lo podés hacer estableciendo un modo específico de color con la función colorMode().
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=3000" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+El modo RGB con rangos de 0 a 255 no es la única forma en que podemos manipular color en p5.js, de hecho p5.js nos permite pensar el color de la manera que deseemos. Por ejemplo, podés preferir pensar el color en rangos de 0 a 100 (como un porcentaje). Esto lo podés hacer estableciendo un modo específico de color con la función `colorMode()`.
 
 ```js
 colorMode(modo)
@@ -114,13 +134,17 @@ Finalmente, si bien es probable que tu código requiera solamente el modo de col
 - Saturación — La vivacidad del color, 0 a 255 por definición.
 - Brillo— Es el brillo del color, 0 a 255 por definición.
 
-Con colorMode() puedes definir tu propio rango de valores. Algunos prefieren un rango de 0-360 para el tono (como en los 360 grados de la rueda de color) y 0-100 para la saturación y brillo (como en 0-100%).
+Con `colorMode()` puedes definir tu propio rango de valores. Algunos prefieren un rango de 0-360 para el tono (como en los 360 grados de la rueda de color) y 0-100 para la saturación y brillo (como en 0-100%).
 
 ```js
 colorMode(HSB,360,100,100);
 ```
 
 ### 1.4.6. Hexadecimal
+
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=3210" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 La notación hexadecimal (hex) es una notación alternativa para definir el color. Este método es popular entre diseñadores que trabajan en la Web porque estándares como HyperText Markup Language (HTML) y Cascading Style Sheets (CSS) usan esta notación. La notación Hex para el color codifica cada número desde el 0 al 255 en un valor de dos dígitos usando los números de 0 a 9 y las letras de A a F. De esta forma, tres valores RGB desde 0 a 255 se pueden escribir como un solo valor hex de seis dígitos. Unas pocas conversiones de ejemplo demuestran esta notación:
 
@@ -138,11 +162,15 @@ Cuando se usan valores de color codificados en notación hex, debemos colocar un
 
 ### 1.4.7. Figuras Personalizadas
 
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1gRDsjZt6qI?si=0wJo4MiDyo47hZdo&amp;start=3297" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 Además de todas las figuras primitivas que vimos en esta clase, existen otras que pueden ser investigadas en la referencia de p5.js
 
 De todas formas, no es un límite usar estas figuras geométricas básicas, también se pueden dibujar cualquier tipo de figuras conectando una serie de puntos.
 
-La función beginShape() señala el comienzo de una nueva figura. La función vertex() es usada para definir cada par de coordenadas x e y que corresponde a los vértices de la figura. Finalmente, endShape() señala que la figura está completa:
+La función `beginShape()` señala el comienzo de una nueva figura. La función `vertex()` es usada para definir cada par de coordenadas x e y que corresponde a los vértices de la figura. Finalmente, `endShape()` señala que la figura está completa:
 
 ```js
 beginShape();
@@ -154,4 +182,4 @@ vertex(226, 109);
 endShape(CLOSE);
 ```
 
-La función `endShape()` puede recibir el parámetro CLOSE que sirve para cerrar la figura conectando el último vértice con el primero.
+La función `endShape()` puede recibir el parámetro `CLOSE` que sirve para cerrar la figura conectando el último vértice con el primero.
