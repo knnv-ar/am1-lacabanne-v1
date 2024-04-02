@@ -63,6 +63,7 @@ export const SIDEBAR: Sidebar = {
   es: {
     'General': [
       { text: 'Introducción', link: 'es/introduccion' },
+      { text: 'Clases', link: 'es/clases' },
     ],
     'Taller de p5.js': [
       { text: 'CLASE 1. ¿Qué es p5.js?', link: 'es/que-es-p5js' },
